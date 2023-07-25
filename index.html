@@ -33,9 +33,7 @@
 
     <style type="text/tailwindcss">
     @layer utilities {
-      .content-auto {
-        content-visibility: auto;
-      }
+      
       .lato{
             font-family: 'Lato', sans-serif;
         }
@@ -43,7 +41,53 @@
        
     </style>
 </head>
-<body>
-    <p>h</p>
+<body class="lato">
+    <header class="container mx-auto">
+        <nav class="navbar md:bg-[#F85559] text-primary-content rounded-full mt-12 mb-12">
+            
+               
+                <div class="navbar-center hidden md:flex">
+                  <ul class="menu menu-horizontal text-lg font-medium text-white px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+
+                  </ul>
+                </div>
+
+                <div class="navbar-start ">
+                    <div class="dropdown absolute right-0">
+                      <label tabindex="0" class="btn  md:hidden align-middle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                      </label>
+                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 absolute right-0">
+                          <li><a>Home</a></li>
+                          <li><a>About Us</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>Item 3</a></li>
+                      </ul>
+                    </div>
+                   <div class="flex gap-3 justify-center items-center md:pl-44 lg:pl-60">
+                    <a class="  "><img class="w-10" src="./images/logo.png" alt=""> </a> <p class=" text-2xl lg:text-3xl text-center font-bold text-[#121212] md:text-white ">Fruit Burst</p>
+                   </div>
+                  </div>
+                <div class="navbar-end hidden lg:flex  ">
+                    
+                        
+                          <div class="flex  -ml-14">
+                           
+                            
+                                <input type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto  rounded-3xl" />
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" class=" h-12 w-5 -ml-8  absolute right-[215px]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                            
+                            
+                          </div>
+                          
+                </div>
+            
+        </nav>
+    </header>
 </body>
 </html>
